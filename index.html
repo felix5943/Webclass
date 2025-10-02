@@ -2,34 +2,78 @@
 <html>
 <head>
     <meta charset="UTF-8" />
-    <title>BMI Calculator</title>
-    <link rel="stylesheet" href="style.css">
+    <title>title</title>
+    <style>
+body{
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    font-family: Arial,sans-serif;
+}
+#header{
+    background-color: #ff9999;
+    height: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5em;
+}
+#nav{
+    background-color: #99ff99;
+    height: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5em;
+}
+.article{
+    background-color: #9999ff;
+    height: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5em;
+}
+.section{
+    background-color: #ffff99;
+    width: 70%;
+    height: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5em;
+}
+#sidebar{
+    background-color: #ffcc99;
+    height: 60%;
+    width: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5em;
+}
+#footer{
+    background-color: #cc99ff;
+    height: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5em;
+}
+
+    </style>
 </head>
 <body>
-    <div class="container">
-        <h2>BMI Calculator</h2>
-        <form id="bmi form">
-            <label for="name">Full Name</label>
-            <input type="text" id="name" placeholder="Enter your full name" required>
-            <label for="age">Age</label>
-            <input type="number" id="age" placeholder="Enter your age" required>
-            <label for="gender">Gender</label>
-            <select id="gender" required>
-                <option value="">--Select--</option>
-                <option value="male">Male</option>
-                <option value="female">Female</option>
-
-            </select>
-            <label for="height">Height (cm)</label>
-            <input type="number" id="height" placeholder="Enter your height in cm" required>
-            <label for="weight">Weight (kg)</label>
-            <input type="number" id="weight" placeholder="Enter your weight in kg" required>
-
-            <button type="button" onclick="calculateBMI()">Calculate BMI</button>
-        </form>
-        <div class="result" id="result"></div>
+    <div id="header">Header</div>
+    <div id="nav">Nav</div>
+    <div class="article">
+        <div class="section">Section</div>
+        <div id="sidebar">Sidebar</div>
     </div>
-    <script src="script.js"></script>
+    <div id="footer">Footer</div>
+
     
 </body>
 </html>
